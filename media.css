@@ -1,0 +1,265 @@
+@media (max-width: 768px){ 
+  
+  /*******************************************************/
+  /*---------------------------SECTIONS------------------ */
+  /*******************************************************/
+  
+  body{
+    /* overflow-x: none; */
+    overflow-x: hidden;
+  }
+  
+  a{
+				text-decoration: none;
+	}
+  
+  /*******************/
+  /*******HEADER*******/
+  /*******************/
+  .header{
+    background-image: url("Images/");
+  }
+
+  .header-info{
+    justify-content: center;
+  }
+  .header-text--1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .header-text--2 {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 90%;
+    line-height: 1.5;
+    color: #000045;
+  }
+  
+  .header--2 {
+    display: none;
+  }
+  
+  .header-logo-image{
+   display: none;
+  }
+  
+  /**********************/
+  /*******HEADER END*****/
+  /*********************/
+  
+  
+  
+  
+  /************************/
+  /*******SECTION--1*******/
+  /************************/
+  
+  .section--1 {
+    margin-top: 4rem;
+  }
+  
+  .section--1-head {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .section--1-head-text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    width: 88%;
+  }
+  
+  .section--1-cont {
+    display: grid;
+    grid-template-columns: 18rem;
+    grid-template-rows: 25rem 25rem 25rem 25rem 25rem 25rem;
+    row-gap: 2rem;
+  }
+  
+  
+  /*****************************/
+  /*******SECTION--1--END*******/
+  /*****************************/
+  
+  
+  
+  
+  /************************/
+  /*******SECTION--2*******/
+  /************************/
+  
+  .section--2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10rem;
+    justify-content: center;
+    max-width: 800%;
+    gap: 2rem;
+  }
+  
+  .section--1-cont--4 .section--1-cont--2-img{
+  	display: none;
+  }
+  
+  .section--2-cont-1 {
+    margin-left: 4rem;
+  }
+  .section--2-cont-2 {
+    margin-left: 6rem;
+  }
+  
+  /*****************************/
+  /*******SECTION--2--END*******/
+  /*****************************/
+  
+  
+  
+  
+  /*****************************/
+  /**********SECTION--3*********/
+  /*****************************/
+  
+  .section--3 {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  .section--3-cont--1 {
+    width: 100%;
+  }
+  
+  .section--3-cont--1 img {
+    height: 40rem;
+    width: 90%;
+  }
+  
+  .section--3-cont--2 {
+    margin-top: 4rem;
+    width: 100%;
+    padding-left: 4rem;
+  }
+
+  
+  /*****************************/
+  /*******SECTION--3--END*******/
+  /*****************************/
+  
+  
+  
+  /*****************************/
+  /*********SECTION--4**********/
+  /*****************************/
+  
+  .section--4 {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .section--4-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  
+  /*****************************/
+  /*******SECTION--4--END*******/
+  /*****************************/
+  
+  
+  
+  
+  /*****************************/
+  /**********SECTION---5********/
+  /*****************************/
+  
+  .section--5-cont {
+    display: grid;
+    grid-template-columns: 14rem;
+    grid-template-rows: 17rem 17rem 17rem 17rem;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+  
+  /*****************************/
+  /*******SECTION--5--END*******/
+  /*****************************/
+  
+  
+  
+  
+  /*****************************/
+  /*********SECTION--6**********/
+  /*****************************/
+  
+  .section--6 {
+    margin-top: 10rem;
+  }
+
+  .section--6 h2{
+    font-size: 1.8rem;
+  }
+  .section--6 p{
+    font-size: 1rem;
+  }
+  /*****************************/
+  /*******SECTION--6--END*******/
+  /*****************************/
+  
+  
+  
+  /*****************************/
+  /*************FOOTER**********/
+  /*****************************/
+  
+  .footer {
+    height: 200vh;
+    width: 100%;
+    background-color: #130c55;
+    margin-top: 18rem;
+    cursor: pointer;
+  }
+  
+  .footer-head {
+    display: none;
+  }
+  
+  .footer-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+  
+  .footer-cont-1 {
+    width: 70%;
+  }
+  
+  .footer-cont-1 img {
+    height: 10rem;
+    width: 60%;
+    margin-left: 3rem;
+  }
+
+  .footer-cont-2 {
+    margin-top: 2.4rem;
+    margin-left: 8rem;
+  }
+  
+  /*****************************/
+  /*********FOOTER--END*********/
+  /*****************************/
+  
+
+}

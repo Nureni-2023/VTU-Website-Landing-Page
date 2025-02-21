@@ -1,0 +1,948 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* .navbar {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px #d1d1d1;
+
+   Because we want header to be sticky later 
+  height: 6rem;
+  padding: 0 4.8rem;
+  position: relative;
+} */
+
+/* --------------NAVBAR--------------- */
+
+.sticky .navbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    padding-top: 0;
+  padding-bottom: 0;
+  background-color: #3232f9;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #13007c;
+  padding: 15px 20px;
+}
+
+.navbar .logo a {
+  /* color: white; */
+  /* font-size: 24px; */
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links li a:hover {
+  background-color: #3232f9;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 1px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -7px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #000d5f;
+    width: 50%; /* Set the width to 50% of the screen */
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding-top: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
+
+/*******************************************************/
+/*---------------------------SECTIONS------------------ */
+/*******************************************************/
+
+
+/*******************/
+/*******HEADER*******/
+/*******************/
+
+.header {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  background-color: #fcc419;
+  width: 100%;
+
+  height: 100vh;
+  display: flex;
+  animation: pulse 10s infinite;
+}
+
+.element {
+  /* padding-top: 20rem; */
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #a5c3e4;
+  }
+  10% {
+    background-color: #9cabeb;
+  }
+  20% {
+    background-color: #d0ceeb;
+  }
+  30% {
+    background-color: #c2c8ec;
+  }
+  40% {
+    background-color: #afbceb;
+  }
+  50% {
+    background-color: #c4c9ff;
+  }
+  60% {
+    background-color: #c1c1ff;
+  }
+  70% {
+    background-color: #9696f8;
+  }
+  80% {
+    background-color: #8d8dff;
+  }
+  90% {
+    background-color: #7b7bff;
+  }
+  100% {
+    background-color: #6666ff;
+  }
+}
+
+.header-text--1 {
+  font-size: 4rem;
+  font-weight: 700;
+  /* margin-top: 1rem; */
+  width: 90%;
+  color: #000045;
+  font-family: "Nova Square", sans-serif;
+}
+
+.header-text--2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Nova Square", sans-serif;
+  margin-top: 1rem;
+  width: 90%;
+  line-height: 1.5;
+  color: #000045;
+}
+
+.header-info {
+  display: grid;
+  grid-template-columns: 12rem;
+  grid-template-rows: 3rem 3rem 3rem;
+  row-gap: 1rem;
+  margin-top: 4rem;
+}
+
+.create-acct,
+ .login,
+ .download-app{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border-radius: 1rem;
+}
+
+.create-acct-text,
+.login-text,
+.download-app-text{
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.header--2 {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+}
+
+.header-logo-image{
+  width: 24rem;
+  height: 24rem;
+  margin-top: 4rem;
+}
+
+.header-logo-image:hover {
+  border: 15px solid blue;
+  border-radius: 20px;
+  transition: all ease 0.6s;
+ 
+}
+/**********************/
+/*******HEADER END*****/
+/*********************/
+
+
+
+
+/************************/
+/*******SECTION--1*******/
+/************************/
+
+.section--1 {
+  margin-top: 6rem;
+}
+
+.section--1-head {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 100%;
+  padding-bottom: 2rem;
+  font-family: "Noto Sans Mandaic", sans-serif;
+}
+
+.section--1-head-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 88%;
+  text-align: center;
+  margin: 0 auto;
+  color: #535455;
+  font-family: "Noto Sans Mandaic", sans-serif;
+}
+
+.section--1-cont {
+  display: grid;
+  grid-template-columns: 18rem 18rem 18rem;
+  grid-template-rows: 25rem 25rem;
+  row-gap: 2rem;
+  column-gap: 2.5rem;
+  justify-content: center;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.section--1-cont--1,
+.section--1-cont--2,
+.section--1-cont--3,
+.section--1-cont--4,
+.section--1-cont--5,
+.section--1-cont--6 {
+  border-radius: 1rem;
+  border: 2px solid #e0dadd;
+  transition: all ease 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--1-cont--1:hover,
+.section--1-cont--2:hover,
+.section--1-cont--3:hover,
+.section--1-cont--4:hover,
+.section--1-cont--5:hover,
+.section--1-cont--6:hover {
+  border-radius: 1rem;
+  border: 2px solid blue;
+  box-shadow: 0 2px 16px 0 #fffcfd;
+  padding: 0.5rem 0;
+}
+
+.section--1-cont--1-img,
+.section--1-cont--2-img,
+.section--1-cont--3-img,
+.section--1-cont--4-img,
+.section--1-cont--5-img,
+.section--1-cont--6-img{
+  height: 8rem;
+  max-width: 12rem;
+  margin-top: 3rem;
+}
+
+.section-1-cont--1-head,
+.section-1-cont--2-head,
+.section-1-cont--3-head,
+.section-1-cont--4-head,
+.section-1-cont--5-head,
+.section-1-cont--6-head{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-top: 2rem;
+  width: 70%;
+  color: blue;
+}
+
+.section-1-cont--1-text,
+.section-1-cont--2-text,
+.section-1-cont--3-text,
+.section-1-cont--4-text,
+.section-1-cont--5-text,
+.section-1-cont--6-text{
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-top: 1rem;
+  width: 85%;
+  line-height: 1.5;
+  color: blue;
+}
+/*****************************/
+/*******SECTION--1--END*******/
+/*****************************/
+
+
+
+
+/************************/
+/*******SECTION--2*******/
+/************************/
+
+.section--2 {
+  display: flex;
+  margin-top: 10rem;
+}
+
+.section--2-cont-1 {
+  margin-left: 4rem;
+}
+
+.section--2-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  color: blue;
+}
+
+.section--2-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+  width: 55%;
+  line-height: 1.5;
+  color: blue;
+}
+
+.section--2-list {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 520;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-top: 0.8rem;
+  width: 60%;
+  line-height: 1.5;
+  color: blue;
+}
+
+.section--2-list li {
+  margin-bottom: 1rem;
+}
+.section--2-info {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.customer p:first-child,
+.order p:first-child,
+.satisfied p:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: blue;
+  width: 100%;
+  font-family: "Noto Sans Mandaic", sans-serif;
+}
+
+.customer,
+.order,
+.satisfied {
+}
+
+.customer p,
+.order p,
+.satisfied p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #978f8f;
+  width: 90%;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  display: block;
+}
+
+.satisfied p:last-child {
+  margin-top: 0.8rem;
+}
+
+.border {
+  width: 2px;
+  height: 4rem;
+  background-color: #b6b2b2;
+  gap: 10px;
+}
+
+.section--2-cont-2 {
+}
+
+.section--2-cont-2-img {
+  margin-top: 5rem;
+  margin-left: -12rem;
+  width: 24rem;
+  height: 24rem;
+}
+/*****************************/
+/*******SECTION--2--END*******/
+/*****************************/
+
+
+
+
+/*****************************/
+/**********SECTION--3*********/
+/*****************************/
+
+.section--3 {
+  display: flex;
+  gap: 6rem;
+  margin-top: 10rem;
+}
+.section--3-cont--1 {
+  width: 50%;
+}
+
+.section--3-cont--1 img {
+  height: 40rem;
+  width: 90%;
+}
+
+.section--3-cont--2 {
+  margin-top: 4rem;
+  width: 50%;
+}
+
+.section--3-cont--2 h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.section--3-cont--2 p {
+  font-size: 1.2rem;
+  font-weight: 520;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #7e7676;
+  width: 92%;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.ul-text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ul-text li {
+  margin-bottom: 1rem;
+}
+
+.get-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: ;
+  border: 2px solid blue;
+  color: blue;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  transition: all ease 1s;
+  cursor: pointer;
+}
+
+.get-start:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+/*****************************/
+/*******SECTION--3--END*******/
+/*****************************/
+
+
+
+/*****************************/
+/*********SECTION--4**********/
+/*****************************/
+
+.section--4 {
+  width: 100%;
+  height: 60vh;
+  background-color: blue;
+  margin-top: 10rem;
+  /* overflow: hidden; */
+}
+
+.section--4 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  padding-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.section--4 p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  padding-top: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+  
+}
+
+.section--4-cont {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.section--4-cont div {
+  height: 7rem;
+  width: 18rem;
+  background-color: #fff;
+  border-radius: 2.5rem;
+  border: 4px solid #fff;
+  /* color: #000; */
+  cursor: pointer;
+  color: blue;
+  box-shadow: 2px 2px 2px 2px #faf3f3;
+}
+
+.section--4-cont div:hover {
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 0 0 0;
+}
+
+.section--4-cont div h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  padding-top: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+
+.section--4-cont div p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  /* padding-top: 1rem; */
+  text-align: center;
+}
+/*****************************/
+/*******SECTION--4--END*******/
+/*****************************/
+
+
+
+
+/*****************************/
+/**********SECTION---5********/
+/*****************************/
+
+.section--5 {
+  margin-top: 10rem;
+}
+
+.section--5 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section--5 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section--5-cont {
+  display: grid;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+  grid-template-rows: 17rem;
+  justify-content: space-evenly;
+}
+
+.section--5-cont div {
+  /* background-color: red; */
+  box-shadow: 0px 2px 2px 2px #e0dadd;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.section--5-cont div:hover {
+  border-top: 6px solid rgb(255, 217, 0);
+  box-shadow: 0px 8px 8px 8px #e0dadd;
+}
+
+.section--5-cont div img {
+  height: 8rem;
+  width: 8rem;
+}
+/*****************************/
+/*******SECTION--5--END*******/
+/*****************************/
+
+
+
+
+/*****************************/
+/*********SECTION--6**********/
+/*****************************/
+
+.section--6 {
+  margin-top: 10rem;
+}
+
+.section--6 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section--6 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section--6-cont {
+  display: flex;
+  gap: 3.2rem;
+  overflow: scroll;
+}
+
+.section--6-cont img {
+  height: 8rem;
+  width: 8rem;
+}
+/*****************************/
+/*******SECTION--6--END*******/
+/*****************************/
+
+
+
+/*****************************/
+/*************FOOTER**********/
+/*****************************/
+
+.footer {
+  height: 140vh;
+  width: 100%;
+  background-color: #130c55;
+  margin-top: 18rem;
+  position: relative;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.footer-head {
+  height: 14rem;
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto;
+  border-top: 30rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 10;
+  top: -6rem;
+  background-color: blue;
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-head-cont-1 {
+  width: 50%;
+}
+
+.footer-head-cont-1 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.footer-head-cont-1 p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.footer-head-cont-2 {
+  display: flex;
+  flex-direction: column;
+  gap: -2rem;
+}
+
+.footer-head-cont-2 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #fff;
+  /* line-height: 1.4; */
+  text-align: center;
+}
+
+.footer-head-cont-2-child {
+  height: 3.5rem;
+  width: 24rem;
+  background-color: #fff;
+  border-radius: 28px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-head-cont-2-child p {
+  color: #0000ff;
+  margin-left: 8rem;
+}
+
+.footer-head-cont-2-child-min {
+  height: 2.8rem;
+  width: 6rem;
+  background-color: #0000ff;
+  border-radius: 30px;
+}
+
+.footer-cont {
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 2rem;
+}
+
+.footer-cont-1 {
+  width: 40%;
+}
+
+.footer-cont-1 img {
+  height: 8rem;
+  width: 60%;
+  margin-left: 3rem;
+}
+
+.footer-cont-1 p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #b1abab;
+  line-height: 1.8;
+  /* text-align: center; */
+  margin-left: 4rem;
+  width: 50%;
+}
+
+.footer-cont-2 {
+  margin-top: 2.4rem;
+}
+
+.footer-cont-2 h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.footer-cont-2 li {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #b1abab;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-cont-3 {
+  margin-top: 2.4rem;
+  margin-left: 3rem;
+}
+
+.footer-cont-3 h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.footer-cont-3 li {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #b1abab;
+  width: 100%;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer-cont-4 {
+  margin-top: 2.4rem;
+  margin-left: 3rem;
+}
+
+.footer-cont-4 h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.footer-cont-4 a {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #b1abab;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer-end-1,
+.footer-end-2 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-end-1 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/*****************************/
+/*********FOOTER--END*********/
+/*****************************/
